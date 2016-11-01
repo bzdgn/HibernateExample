@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+ <hibernate-mapping>
+ 	<class name="com.levo.example.model.Person" table="PERSONS">
+ 		<id name="id" type="int">
+ 			<column name="ID" />
+ 			<generator class="identity" />
+ 		</id>
+ 		<property name="firstName" type="java.lang.String">
+ 			<column name="FIRST_NAME" />
+ 		</property>
+ 		<property name="lastName" type="java.lang.String">
+ 			<column name="LAST_NAME" />
+ 		</property>
+  		<property name="phoneNumber" type="java.lang.String">
+ 			<column name="PHONE_NUMBER" />
+ 		</property>
+   		<property name="occupied" type="boolean">
+ 			<column name="OCCUPIED" />
+ 		</property>
+ 	</class>
+ </hibernate-mapping>
